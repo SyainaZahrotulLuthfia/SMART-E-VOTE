@@ -38,7 +38,7 @@
         </div>
 
         <!-- Voting Items Section -->
-        <div class="row justify-content-center">
+        <div class="row">
             @if ($votes->count())
                 @foreach ($votes as $item)
                     <div class="col-xxl-3 col-md-6 col-sm-6 mb-3">

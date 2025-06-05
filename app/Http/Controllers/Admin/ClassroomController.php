@@ -67,8 +67,7 @@ class ClassroomController extends Controller
         // Get students based on classroom ID
         $students = User::with('classroom')
                         ->where('classroom_id', $id)
-                        ->latest()
-                        ->paginate(20);
+                        ->paginate(36);
 
         // Get the classroom data
         $classroom = Classroom::findOrFail($id);
