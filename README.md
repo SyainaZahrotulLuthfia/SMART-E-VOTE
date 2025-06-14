@@ -11,7 +11,7 @@
 
 SMART E-Vote adalah aplikasi e-voting berbasis Laravel yang dirancang untuk mempermudah proses pemilihan secara digital. Cocok digunakan untuk sekolah, kampus, organisasi, atau lembaga lainnya.
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 Aplikasi SMART E-VOTE dibangun menggunakan beberapa teknologi berikut:
 
@@ -111,8 +111,8 @@ Jika kamu ingin membantu mengembangkan SMART E-VOTE:
 ## Kontak
 
 Dikembangkan oleh: Syaina Zahrotul Luthfia
-📧 Email: syainazahrotulluthfiaa@gmail.com 
-🌐 GitHub: [@SyainaZahrotulLuthfia](https://github.com/SyainaZahrotulLuthfia)
+Email: syainazahrotulluthfiaa@gmail.com 
+GitHub: [@SyainaZahrotulLuthfia](https://github.com/SyainaZahrotulLuthfia)
 
 ## Lisensi
 
