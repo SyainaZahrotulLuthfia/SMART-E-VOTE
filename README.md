@@ -7,60 +7,114 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## SMART E-VOTE
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+SMART E-Vote adalah aplikasi e-voting berbasis Laravel yang dirancang untuk mempermudah proses pemilihan secara digital. Cocok digunakan untuk sekolah, kampus, organisasi, atau lembaga lainnya.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Teknologi yang Digunakan
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aplikasi SMART E-VOTE dibangun menggunakan beberapa teknologi berikut:
 
-## Learning Laravel
+- **[Laravel](https://laravel.com/)** – Framework PHP untuk backend
+- **[MySQL](https://www.mysql.com/)** – Database manajemen
+- **[Blade](https://laravel.com/docs/blade)** – Template engine bawaan Laravel
+- **[JavaScript](https://www.javascript.com/)** – Interaktivitas frontend
+- **[Node.js & NPM](https://nodejs.org/)** – Untuk manajemen dependensi frontend
+- **[Vite](https://vitejs.dev/)** – Tools bundler untuk build dan dev server
+- **[Cuba Admin Template](https://themeforest.net/item/cuba-admin-dashboard-template/30896001)** – Template dashboard modern berbasis Bootstrap 5
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Fitur
+- Login Admin dan Siswa
+- Voting hanya satu kali
+- Dashboard statistik real-time
+- Data siswa, pemilihan, dan kandidat
+- Grafik hasil voting
+- Riwayat pemilihan
+- Sistem pemilihan aktif/berakhir otomatis
+- Tampilan modern menggunakan Cuba Admin Template
 
-## Laravel Sponsors
+## Instalasi
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+bash
+git clone https://github.com/SyainaZahrotulLuthfia/SMART-E-VOTE.git smart-evote
+cd smart-evote
+composer install
+npm install && npm run dev
+cp .env.example .env
+php artisan key:generate
 
-### Premium Partners
+# Atur konfigurasi database di .env
+# DB_DATABASE=smart_evoting
+# DB_USERNAME=root
+# DB_PASSWORD=
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+php artisan migrate --seed
+php artisan serve
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Akun Default 
 
-## Code of Conduct
+txt
+{Admin}
+Email     : admin@gmail.com 
+Password  : 123456
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+{Siswa}
+Email     : student@gmail.com 
+Password  : 123456
 
-## Security Vulnerabilities
+## Tampilan Aplikasi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Berikut beberapa tampilan dari SMART E-VOTE:
 
-## License
+- Login SMART E-VOTE
+- Dashboard Admin
+- Data Kelas
+- Data Siswa
+- Data Pemilihan
+- Tambah Pemilihan
+- Data Calon Kandidat
+- Belum Voting
+- Sudah Voting
+- Dashboard Utama Siswa
+- Dashboard Siswa Tampilan Calon Kandidat
+- Dashboard Siswa Kandidat Terpilih
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p align="center">
+  <img src="https://iili.io/FqPl194.png" width="600" alt="Login SMART E-VOTE">
+  <img src="https://iili.io/FqPE8N4.png" width="600" alt="Dashboard Admin">
+  <img src="https://iili.io/FqPjud7.png" width="600" alt="Data Kelas">
+  <img src="https://iili.io/FqPjQEl.png" width="600" alt="Data Siswa">
+  <img src="https://iili.io/FqPwtoJ.png" width="600" alt="Data Pemilihan">
+  <img src="https://iili.io/FqPNaKQ.png" width="600" alt="Tambah Pemilihan">
+  <img src="https://iili.io/FqPO6TF.png" width="600" alt="Data Calon Kandidat">
+  <img src="https://iili.io/FqPvBI9.png" width="600" alt="Belum Voting">
+  <img src="https://iili.io/FqPvwhX.png" width="600" alt="Sudah Voting">
+  <img src="https://iili.io/FqPgc9R.png" width="600" alt="Dashboard Utama Siswa">
+  <img src="https://iili.io/FqPUBII.png" width="600" alt="Dashboard Siswa Tampilan Calon Kandidat">
+  <img src="https://iili.io/FqPUeCF.png" width="600" alt="Dashboard Siswa Kandidat Terpilih">
+</p>
+
+## Kontribusi
+
+Kontribusi sangat terbuka!  
+Jika kamu ingin membantu mengembangkan SMART E-VOTE:
+
+1. Fork repositori ini
+2. Buat branch fitur: `git checkout -b fitur-baru`
+3. Commit perubahanmu: `git commit -m 'Tambah fitur X'`
+4. Push ke branch: `git push origin fitur-baru`
+5. Buat Pull Request!
+
+## Kontak
+
+Dikembangkan oleh: Syaina Zahrotul Luthfia
+📧 Email: syainazahrotulluthfiaa@gmail.com 
+🌐 GitHub: [@SyainaZahrotulLuthfia](https://github.com/SyainaZahrotulLuthfia)
+
+## Lisensi
+
+Aplikasi SMART E-VOTE adalah perangkat lunak sumber terbuka yang dilisensikan di bawah [Lisensi MIT](https://opensource.org/licenses/MIT).
+
